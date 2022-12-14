@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * main - Entry point
+ * main -Prin the string "_putchar" from a character array.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char *sh = "_putchar";
+	char a[] = "_putchar";
+	int i;
 
-	while (*sh)
+	for (i = 0; i < 8; i ++)
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(a[i]);
 	}
 	_putchar('\n');
 
