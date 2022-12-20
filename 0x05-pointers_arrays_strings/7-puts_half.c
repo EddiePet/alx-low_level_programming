@@ -3,22 +3,22 @@
 /**
  * puts_half - Prints half of a string.
  * @str: The string to be printed.
+ * Return: no return.
  */
 void puts_half(char *str)
 {
-	int index = 0, len = 0, n;
+	int a = 0, i;
 
-	while (str[index++])
-		len++;
+	while (a >= 0)
+	{
+		if (str[a] == '\0')
+			break;
+		a++;
+	}
+	if (a % 2 == 1)
+		i = a / 2;
 
-	if ((len % 2) == 0)
-		n = len / 2;
-
-	else
-		n = len / 2;
-
-	for (index = n; index, len; index++)
-		_putchar(str[index]);
-
+	for (i++; i < a; i++)
+		_putchar(str[i]);
 	_putchar('\n');
 }
